@@ -164,12 +164,6 @@ class UnaryOp(AST):
         self.expr = expr
 
 
-class Compound(AST):
-    """Represents a 'BEGIN ... END' block"""
-    def __init__(self):
-        self.children = []
-
-
 class Assign(AST):
     def __init__(self, left, op, right,semi):
         self.left = left
